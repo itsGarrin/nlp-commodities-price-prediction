@@ -6,8 +6,8 @@ Created on Wed Nov 13 14:05:56 2024
 @author: jianihe
 """
 
-import requests
 import pandas as pd
+import requests
 import yfinance as yf
 
 
