@@ -199,7 +199,7 @@ def evaluate_models(
             "Root Mean Squared Error": np.sqrt(mean_squared_error(y_true, y_pred)),
             "R-squared": r2_score(y_true, y_pred),
             "Adjusted R-squared": 1 - (1 - r2_score(y_true, y_pred)) * (len(y_true) - 1) / (
-                        len(y_true) - X.shape[1] - 1)
+                    len(y_true) - X.shape[1] - 1)
         }
 
     # Check for input validity
@@ -328,6 +328,7 @@ def plot_coefficients(ols_results: sm, highlight_vars=None, significance_level=0
     plt.ylabel('Coefficient Value')
     plt.tight_layout()  # Adjust layout to prevent clipping
     plt.show()
+
 
 def plot_loss(history):
     """
